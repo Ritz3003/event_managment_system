@@ -1,0 +1,15 @@
+meta {
+  name: Dashboard
+  type: http
+  seq: 18
+}
+
+get {
+  url: http://localhost:8888/api/events/2/dashboard
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0ZXN0QGV4LmNvbSIsImlhdCI6MTc4MzAwNTM1MSwiZXhwIjoxNzgzMDkxNzUxLCJyb2xlIjoiVVNFUiJ9.wW9jjHjLU70WTiZbXdvYiBrqG1KusYRqhUCA8o49cE7adNyzs3U8ZoMHKCRLrjcp
+}

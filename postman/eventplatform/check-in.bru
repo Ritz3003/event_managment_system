@@ -1,0 +1,25 @@
+meta {
+  name: check-in
+  type: http
+  seq: 16
+}
+
+post {
+  url: http://localhost:8888/api/tickets/check-in
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0ZXN0QGV4LmNvbSIsImlhdCI6MTc4Mjk2NjAxMiwiZXhwIjoxNzgzMDUyNDEyLCJyb2xlIjoiVVNFUiJ9.eyynb5H356Dq0u-YwxsLZ6q9tOMKgsg7KpQB1QnHWzxzamWpONmaMkVSmhvtsMLG
+}
+
+body:json {
+  {
+    "qrToken" : "28798704-960c-4560-b9d7-1f42c56ac199"
+  }
+}

@@ -1,0 +1,25 @@
+meta {
+  name: GetEvent
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://localhost:8888/api/events
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0ZXN0QGV4LmNvbSIsImlhdCI6MTc4MjIyMTA3MywiZXhwIjoxNzgyMzA3NDczLCJyb2xlIjoiVVNFUiJ9.KD-GIeDYIlctrNIh56Kbvh0tD2ZbelLXHYFxagV5lBn-IwK5yt7Chl1kMrYlrJ71
+}
+
+body:json {
+  {
+    "title": "Sleeping",
+    "description": "Time to sleep",
+    "location": "Offline_Home",
+    "eventDate": "2026-01-30T10:00:00",
+    "capacity": 100
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: ValidateToken
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8888/api/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "test@test.com",
+    "password": "test56"
+  }
+}

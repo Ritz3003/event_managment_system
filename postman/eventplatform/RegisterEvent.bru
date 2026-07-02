@@ -1,0 +1,29 @@
+meta {
+  name: RegisterEvent
+  type: http
+  seq: 11
+}
+
+post {
+  url: http://localhost:8888/api/events/2/register
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0ZXN0QGV4LmNvbSIsImlhdCI6MTc4Mjk5NzA2MywiZXhwIjoxNzgzMDgzNDYzLCJyb2xlIjoiVVNFUiJ9.Rltt1HueP8RqlsS3F9bj5KAAEy2gl1mjAwEZOPhmKGa_v39AZjAJ6NcBV2-AQNJW
+}
+
+body:json {
+  {
+    "title": "Java Workshop",
+    "description": "Learn Java",
+    "location": "Online",
+    "eventDate": "2026-07-03T10:00:00",
+    "capacity": 100
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: test
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:8888/api/test/hello
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0ZXN0QGV4LmNvbSIsImlhdCI6MTc4MTg0OTU4NCwiZXhwIjoxNzgxOTM1OTg0LCJyb2xlIjoiVVNFUiJ9.HRSyrXH2NRiRTv604j_Qnjv6xlEh0wMsM5cAU4StTiWhyYvwuNyOtJG8DHJnb7l7
+}

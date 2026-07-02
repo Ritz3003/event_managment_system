@@ -1,0 +1,29 @@
+meta {
+  name: CreateEvent
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8888/api/events
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0ZXN0QGV4LmNvbSIsImlhdCI6MTc4Mjk4NjgxOSwiZXhwIjoxNzgzMDczMjE5LCJyb2xlIjoiVVNFUiJ9.hvdnbri4Mgfpx1Rh64k3u4Cpu5SyntODvLDjFn9eqEPgNRjsokHQvEgZw6Tuip8U
+}
+
+body:json {
+  {
+    "title": "Sleep",
+    "description": "GO TO BED",
+    "location": "Online",
+    "eventDate": "2026-07-03T10:00:00",
+    "capacity": 2
+  }
+}

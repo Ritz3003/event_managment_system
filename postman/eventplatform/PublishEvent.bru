@@ -1,0 +1,19 @@
+meta {
+  name: PublishEvent
+  type: http
+  seq: 10
+}
+
+patch {
+  url: http://localhost:8888/api/events/9/publish
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0ZXN0QGV4LmNvbSIsImlhdCI6MTc4Mjk4NjgxOSwiZXhwIjoxNzgzMDczMjE5LCJyb2xlIjoiVVNFUiJ9.hvdnbri4Mgfpx1Rh64k3u4Cpu5SyntODvLDjFn9eqEPgNRjsokHQvEgZw6Tuip8U
+}
