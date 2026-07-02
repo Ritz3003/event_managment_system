@@ -107,6 +107,15 @@ The project follows a layered architecture:
 
 ---
 
+## Key Learning Outcomes
+
+- Built secure REST APIs using Spring Security and JWT.
+- Implemented transactional business logic with pessimistic locking.
+- Designed QR-based ticket generation and event check-in.
+- Developed waitlist promotion and organizer analytics.
+- Integrated asynchronous HTML email notifications.
+- Applied layered architecture and clean code principles.
+
 ## 🎯 Future Improvements
 
 * Docker Support
